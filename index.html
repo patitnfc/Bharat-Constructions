@@ -27,36 +27,54 @@
             border: 3px solid #fff; /* White frame around the cover */
             border-radius: 5px; /* Optional rounded corners */
         }
-        
-       .profile-container {
-            position: relative;
-            margin-top: -50px; /* Adjust to bring the profile image closer to the cover */
+
+        .profile-container {
+            display: flex;
+            justify-content: center; /* Align profile images closer */
+            align-items: center;
+            gap: 20px; /* Reduce gap between profile images */
+            position: absolute;
+            top: 80%; /* Position slightly overlapping the cover */
+            width: 100%;
+            padding: 0 20px;
         }
+
         .profile-image {
             width: 150px;
             height: 150px;
             border-radius: 50%;
             border: 3px solid #fff;
-            background: url('https://i.imgur.com/HI7hQyf.jpeg') no-repeat center center;
             background-size: cover;
-            margin: 0 auto;
+            background-position: center;
+            background-repeat: no-repeat;
+            overflow: hidden;
         }
-        .recipient-name {
-            margin-top: 20px;
-            font-family: 'Montserrat', sans-serif; /* Apply unique font */
-            font-size: 28px;
-            font-weight: bold;
-            letter-spacing: 1px;
-            color: #f2f1fe; /* Changed to black */
+
+        .profile-left {
+            background-image: url('https://i.imgur.com/HI7hQyf.jpeg');
         }
-      .Post-name {
+
+        .profile-right {
+            background-image: url('https://i.imgur.com/HI7hQyf.jpeg');
+        }
+
+        .profile-name {
             margin-top: 10px;
             font-family: 'Montserrat', sans-serif; /* Apply unique font */
             font-size: 18px;
             font-weight: bold;
-            letter-spacing: 1px;
-            color: #f2f1fe; /* Changed to black */
+            color: #f2f1fe; /* White color */
         }
+
+        .recipient-name {
+            margin-top: 175px;
+            font-family: 'Montserrat', sans-serif; /* Apply unique font */
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            color: #f2f1fe; /* Changed to white */
+        }
+
         .description {
             margin: 0px auto;
             font-size: 16px;
@@ -66,6 +84,7 @@
             text-align: justify; /* Adjusted to justify */
             max-width: 600px; /* Limit the width for better readability */
         }
+
         .contact-options {
             margin-top: 40px;
         }
@@ -85,18 +104,28 @@
 </head>
 <body>
     <div class="container">
-        <div class="cover"></div>
-        <div class="profile-container">
-            <div class="profile-image"></div>
-            <div class="recipient-name"> BHARAT CONSTRUCTIONS </div> <!-- Recipient's name -->
-         
-            <div class="description">
-             
-              <br><br>
-                <strong>Bharat Constructions</strong>  is a trusted  <strong>metal scrap contractor and civil construction company </strong> based in  <strong>Indore, India </strong>. We specialize in  <strong>metal scrap procurement, processing, and trading </strong>, along with delivering high-quality  <strong>residential, commercial, and industrial construction projects </strong>. Committed to excellence, sustainability, and timely execution, we provide  <strong>reliable, cost-effective solutions </strong> for our clients. Let’s build a stronger, greener future together!
+        <div class="cover">
+            <div class="profile-container">
+                <div>
+                    <div class="profile-image profile-left"></div>
+                    <div class="profile-name">Burhan Shahbuddin</div>
+                </div>
+                <div>
+                    <div class="profile-image profile-right"></div>
+                    <div class="profile-name">Mustafa Lemonwala</div>
+                </div>
             </div>
         </div>
+
+        <div class="recipient-name"> BHARAT CONSTRUCTIONS </div> <!-- Recipient's name -->
+
+        <div class="description">
+            <br><br>
+            <strong>Bharat Constructions</strong>  is a trusted  <strong>metal scrap contractor and civil construction company </strong> based in  <strong>Indore, India </strong>. We specialize in  <strong>metal scrap procurement, processing, and trading </strong>, along with delivering high-quality  <strong>residential, commercial, and industrial construction projects </strong>. Committed to excellence, sustainability, and timely execution, we provide  <strong>reliable, cost-effective solutions </strong> for our clients. Let’s build a stronger, greener future together!
+        </div>
+
         <p style="margin-top: 40px; color: #f2f1fe;">Select a contact option below:</p>
+
         <div class="contact-options">
             <a href="mailto:Bharatconstructionsindore@gmail.com">
                 <img src="https://static.vecteezy.com/system/resources/previews/020/964/377/non_2x/gmail-mail-icon-for-web-design-free-png.png" alt="Gmail Logo">
@@ -106,25 +135,24 @@
                 <img src="https://cdn.iconscout.com/icon/free/png-256/free-phone-icon-download-in-svg-png-gif-file-formats--call-logo-app-for-ios-store-apps-apple-watch-pack-user-interface-icons-1100768.png" alt="Call Logo">
                 <div>Call Burhan</div>
             </a>
-           <a href="tel:+917869030789">
+            <a href="tel:+917869030789">
                 <img src="https://cdn.iconscout.com/icon/free/png-256/free-phone-icon-download-in-svg-png-gif-file-formats--call-logo-app-for-ios-store-apps-apple-watch-pack-user-interface-icons-1100768.png" alt="Call Logo">
                 <div>Call Mustafa</div>
             </a>
-        
             <a href="https://wa.me/918269265253" target="_blank">
                 <img src="https://i.imgur.com/UCldjse.png" alt="WhatsApp Logo">
                 <div>WhatsApp</div>
             </a>
-          <a href="https://maps.app.goo.gl/4fqwAoiEemnRsoYu7" target="_blank">
+            <a href="https://maps.app.goo.gl/4fqwAoiEemnRsoYu7" target="_blank">
                 <img src="https://cdn.iconscout.com/icon/free/png-256/free-google-maps-2981836-2476488.png?f=webp&w=128" alt="Location Pin Logo">
                 <div>Location</div>
             </a>
-           
         </div>
     </div>
+
     <footer style="text-align: center; margin-top: 40px;background-color: #737373;">
         <img src="https://imgur.com/nJhAado.png" alt="Footer Image" style="width: 150px; height: 80px; border-radius: 10px; ">
-      
     </footer>
 </body>
 </html>
+
